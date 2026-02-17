@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Global Dark Theme */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
+
+/* Page Layout */
+.login-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Title */
+.app-title {
+  position: absolute;
+  top: 40px;
+  text-align: center;
+  font-size: 28px;
+  color: #00f5ff;
+  text-shadow: 0 0 10px #00f5ff, 0 0 20px #00f5ff;
+}
+
+/* Card */
+.login-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
+  width: 350px;
+  text-align: center;
+}
+
+/* Heading */
+.login-heading {
+  margin-bottom: 20px;
+  color: #b026ff;
+  text-shadow: 0 0 8px #b026ff;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #00f5ff;
+  background: #1a1a1a;
+  color: white;
+  outline: none;
+}
+
+.login-form input:focus {
+  box-shadow: 0 0 10px #00f5ff;
+}
+
+/* Neon Button */
+.neon-btn {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #00f5ff;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.neon-btn:hover {
+  background: #b026ff;
+  box-shadow: 0 0 15px #b026ff;
+}
+
+/* Error */
+.error-text {
+  color: #ff4d4f;
+  margin-bottom: 10px;
+}
+
+/* Register */
+.register-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-link {
+  margin-left: 5px;
+  color: #39ff14;
+  cursor: pointer;
+  text-shadow: 0 0 8px #39ff14;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
