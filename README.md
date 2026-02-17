@@ -1,6 +1,5 @@
-# =========================================================
+
 # 🏢 Employee Attendance Management System
-# =========================================================
 
 ### 📌 Project Overview
 A full-stack Employee Attendance Management System built using the MERN stack.
