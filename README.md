@@ -105,6 +105,24 @@ npm start
 Runs on: http://localhost:3000
 
 ---
+### 🔹Seed Data
+
+To populate sample users and attendance:
+
+cd backend
+npm run seed
+
+Sample Credentials:
+
+Manager:
+Email: manager@test.com
+Password: 123456
+
+Employee:
+Email: employee1@test.com
+Password: 123456
+
+---
 
 ### 📡 API Endpoints
 
@@ -132,23 +150,6 @@ GET /api/auth/me
 ##### GET /api/dashboard/employee - Employee stats
 ##### GET /api/dashboard/manager - Manager stats
 
----
-## Seed Data
-
-To populate sample users and attendance:
-
-cd backend
-npm run seed
-
-Sample Credentials:
-
-Manager:
-Email: manager@test.com
-Password: 123456
-
-Employee:
-Email: employee1@test.com
-Password: 123456
 ----
 
 ### 🚀 Deployment Options
