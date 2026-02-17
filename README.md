@@ -1,4 +1,8 @@
 
+Name: Abi Ayshwariya S
+College: Vel Tech Rangarajan Dr Sagunthala R&D institute of science and technology
+Phone: 9150150292
+
 # 🏢 Employee Attendance Management System
 
 ### 📌 Project Overview
