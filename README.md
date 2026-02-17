@@ -2,7 +2,7 @@
 Name: Abi Ayshwariya S
 College: Vel Tech Rangarajan Dr Sagunthala R&D institute of science and technology
 Phone: 9150150292
-
+**Video Link** : https://drive.google.com/file/d/1CuTpgw4_muHSosIcnupSF7Ldkhud1DKu/view?usp=sharing
 # 🏢 Employee Attendance Management System
 
 ### 📌 Project Overview
