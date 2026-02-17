@@ -219,4 +219,5 @@ Day)
 ● Export to CSV button
 
 <img width="1907" height="963" alt="image" src="https://github.com/user-attachments/assets/1c37c1e8-2906-4505-81f1-226f263c64a3" />
-![Uploading image.png…]()
+<img width="921" height="541" alt="image" src="https://github.com/user-attachments/assets/d4149c87-d7c2-4d81-aef8-286fdbf8d9d0" />
+
