@@ -104,25 +104,33 @@ Runs on: http://localhost:3000
 
 ### 📡 API Endpoints
 
-#### Auth
-- POST /api/auth/register
-- POST /api/auth/login
+#### API Endpoints
+### Auth
+POST /api/auth/register
+POST /api/auth/login
+GET /api/auth/me
 
-#### Employee
-- POST /api/attendance/checkin
-- POST /api/attendance/checkout
-- GET  /api/dashboard/employee
+#### Attendance (Employee)
+POST /api/attendance/checkin - Check in
+POST /api/attendance/checkout - Check out
+GET /api/attendance/my-history - My attendance
+GET /api/attendance/my-summary - Monthly summary
+GET /api/attendance/today - Today's status
 
-#### Manager
-- GET /api/dashboard/manager
+#### Attendance (Manager)
+GET /api/attendance/all - All employees
+GET /api/attendance/employee/:id - Specific employee
+GET /api/attendance/summary - Team summary
+GET /api/attendance/export - Export CSV
+GET /api/attendance/today-status - Who's present today
+
+#### Dashboard
+GET /api/dashboard/employee - Employee stats
+GET /api/dashboard/manager - Manager stats
 
 ---
 
 ### 🚀 Deployment Options
-
-#### 🔹 Quick Preview (ngrok)
-ngrok http 5000  
-ngrok http 3000  
 
 Use generated public URLs.
 
@@ -132,17 +140,12 @@ Backend → Render / Railway
 
 ---
 
-### 📈 Future Enhancements
-- Leave Management System
-- Admin Role
-- Attendance Export (PDF/Excel)
-- Email Notifications
-- Calendar View
-- CI/CD Integration
-
----
-
 ### 👩‍💻 Author
 Name: Ayshwariya  
 Role: Computer Science Engineering Student  
-Specialization: MERN Stack Developer
+Tap Academy Evaluation
+
+<img width="1859" height="952" alt="image" src="https://github.com/user-attachments/assets/82dd94f9-c5ed-4a83-86ed-8f4e45685171" />
+<img width="1842" height="896" alt="image" src="https://github.com/user-attachments/assets/b3ca2097-bea5-4896-b387-d4738e932571" />
+
+
