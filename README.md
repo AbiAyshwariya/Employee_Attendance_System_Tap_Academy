@@ -114,23 +114,23 @@ POST /api/auth/register
 POST /api/auth/login
 GET /api/auth/me
 
-#### Attendance (Employee)
-# POST /api/attendance/checkin - Check in
-# POST /api/attendance/checkout - Check out
-# GET /api/attendance/my-history - My attendance
-# GET /api/attendance/my-summary - Monthly summary
-# GET /api/attendance/today - Today's status
+###### Attendance (Employee)
+##### POST /api/attendance/checkin - Check in
+##### POST /api/attendance/checkout - Check out
+##### GET /api/attendance/my-history - My attendance
+##### GET /api/attendance/my-summary - Monthly summary
+##### GET /api/attendance/today - Today's status
 
 #### Attendance (Manager)
-# GET /api/attendance/all - All employees
-# GET /api/attendance/employee/:id - Specific employee
-# GET /api/attendance/summary - Team summary
-# GET /api/attendance/export - Export CSV
-# GET /api/attendance/today-status - Who's present today
+##### GET /api/attendance/all - All employees
+##### GET /api/attendance/employee/:id - Specific employee
+##### GET /api/attendance/summary - Team summary
+##### GET /api/attendance/export - Export CSV
+##### GET /api/attendance/today-status - Who's present today
 
 #### Dashboard
-# GET /api/dashboard/employee - Employee stats
-# GET /api/dashboard/manager - Manager stats
+##### GET /api/dashboard/employee - Employee stats
+##### GET /api/dashboard/manager - Manager stats
 
 ---
 
