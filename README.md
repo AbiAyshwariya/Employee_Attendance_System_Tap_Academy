@@ -121,7 +121,7 @@ GET /api/auth/me
 ##### GET /api/attendance/my-summary - Monthly summary
 ##### GET /api/attendance/today - Today's status
 
-#### Attendance (Manager)
+#### Attendance (Manager).
 ##### GET /api/attendance/all - All employees
 ##### GET /api/attendance/employee/:id - Specific employee
 ##### GET /api/attendance/summary - Team summary
