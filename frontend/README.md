@@ -1,70 +1,272 @@
-# Getting Started with Create React App
+🕒 Employee Attendance System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack Employee Attendance Tracking System with role-based access (Employee & Manager). This application allows employees to mark daily attendance and managers to monitor and manage team attendance efficiently.
 
-## Available Scripts
+🚀 Tech Stack
 
-In the project directory, you can run:
+Frontend
 
-### `npm start`
+React.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Redux Toolkit (or Zustand)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+React Router
 
-### `npm test`
+Axios
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Chart.js / Recharts
 
-### `npm run build`
+Backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Node.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Express.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+JWT Authentication
 
-### `npm run eject`
+bcrypt
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Database
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+MongoDB (Mongoose) (or PostgreSQL if implemented)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+📌 Project Overview
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The system supports:
 
-## Learn More
+Role-based authentication (Employee / Manager)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Daily Check-In / Check-Out
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Attendance history tracking
 
-### Code Splitting
+Monthly attendance summary
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Employee & Manager dashboards
 
-### Analyzing the Bundle Size
+CSV export for attendance reports
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+👥 User Roles
+1️⃣ Employee
+Features
 
-### Making a Progressive Web App
+Register / Login
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Mark Attendance (Check In / Check Out)
 
-### Advanced Configuration
+View Attendance History
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+View Monthly Summary (Present / Absent / Late)
 
-### Deployment
+Dashboard with stats
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Pages
 
-### `npm run build` fails to minify
+Login / Register
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Dashboard
+
+Mark Attendance
+
+My Attendance History
+
+Profile
+
+2️⃣ Manager
+Features
+
+Login
+
+View all employees attendance
+
+Filter by employee, date, status
+
+View team attendance summary
+
+Export attendance reports (CSV)
+
+Dashboard with analytics
+
+Pages
+
+Login
+
+Dashboard
+
+All Employees Attendance
+
+Team Calendar View
+
+Reports
+
+🗂️ Database Schema
+Users Collection
+
+id
+
+name
+
+email
+
+password (hashed)
+
+role (employee / manager)
+
+employeeId (unique, e.g., EMP001)
+
+department
+
+createdAt
+
+Attendance Collection
+
+id
+
+userId
+
+date
+
+checkInTime
+
+checkOutTime
+
+status (present / absent / late / half-day)
+
+totalHours
+
+createdAt
+
+🔐 API Endpoints
+Auth
+
+POST /api/auth/register
+POST /api/auth/login
+GET /api/auth/me
+
+Attendance – Employee
+
+POST /api/attendance/checkin
+POST /api/attendance/checkout
+GET /api/attendance/my-history
+GET /api/attendance/my-summary
+GET /api/attendance/today
+
+Attendance – Manager
+
+GET /api/attendance/all
+GET /api/attendance/employee/:id
+GET /api/attendance/summary
+GET /api/attendance/export
+GET /api/attendance/today-status
+
+Dashboard
+
+GET /api/dashboard/employee
+GET /api/dashboard/manager
+
+📊 Dashboard Features
+Employee Dashboard
+
+Today's attendance status
+
+Monthly summary (Present / Absent / Late)
+
+Total hours worked this month
+
+Recent attendance (Last 7 days)
+
+Quick Check In / Check Out button
+
+Manager Dashboard
+
+Total employees
+
+Today's attendance statistics
+
+Late arrivals
+
+Weekly attendance trend chart
+
+Department-wise attendance chart
+
+List of absent employees today
+
+⚙️ Setup Instructions
+1️⃣ Clone Repository
+
+git clone <your-repository-url>
+cd employee-attendance-system
+
+2️⃣ Backend Setup
+
+cd server
+npm install
+
+Create a .env file inside server/ folder:
+
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+CLIENT_URL=http://localhost:3000
+
+Run backend:
+
+npm run dev
+
+Server runs at:
+http://localhost:5000
+
+3️⃣ Frontend Setup
+
+cd client
+npm install
+
+Create a .env file inside client/ folder:
+
+REACT_APP_API_URL=http://localhost:5000/api
+
+Run frontend:
+
+npm start
+
+App runs at:
+http://localhost:3000
+
+🌱 Seed Data
+
+To populate sample users and attendance data:
+
+npm run seed
+
+Sample Accounts
+
+Manager
+Email: manager@example.com
+
+Password: 123456
+
+Employee
+Email: employee@example.com
+
+Password: 123456
+
+📦 Environment Variables
+Backend (.env)
+
+PORT=
+MONGO_URI=
+JWT_SECRET=
+CLIENT_URL=
+
+Frontend (.env)
+
+REACT_APP_API_URL=
+
+📁 Project Structure
+
+employee-attendance-system/
+│
+├── client/ (React frontend)
+├── server/ (Node + Express backend)
+├── README.md
+└── .env.example
