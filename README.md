@@ -12,12 +12,6 @@ and real-time dashboards for Employees and Managers.
 
 ---
 
-### 🌐 Preview URLs
-Frontend_URL: <YOUR_FRONTEND_PREVIEW_URL>
-Backend_URL: <YOUR_BACKEND_PREVIEW_URL>
-
----
-
 ### 🛠 Tech Stack
 
 #### 🔹 Frontend
